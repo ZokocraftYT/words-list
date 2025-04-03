@@ -49,7 +49,7 @@ def analyser_commande(command):
 def main():
     init_db()
     fichier = "german.txt"  
-    mot = input("Enter a word, a sentence or a command.\nCommand list: \n1. /do stop\nStopping the program\n2. /do search !line_nb:true && !word:false\nDon't search the word, but the line (BUGGY, BUT, REALLY BUGGY)\n$ ").strip()
+    mot = input("Enter a word, a sentence or a command.\nCommand list in README.md!\n$ ").strip()
     
     # Verification if the special command is used
     numero_ligne = analyser_commande(mot)
@@ -83,6 +83,7 @@ def main():
     if numeros_ligne and mots_trouves:
         print(" ".join(numeros_ligne))
         print(" ".join(mots_trouves))
+        print("\n\n")
     
     return main()
 
