@@ -1,5 +1,3 @@
-import requests
-from bs4 import BeautifulSoup
 import sqlite3
 import re
 import unicodedata
@@ -57,7 +55,7 @@ def analyser_commande(command):
 def main():
     init_db()
     fichier = "french.txt"  
-    mot = input("Enter a word, a sentence or a command.\nCommand list: \n1. /do stop\nStoping the program\n2. /do search !line_nb:true && !word:false\nDon't search the word, but the line (BUGGY, BUT, REALLY BUGGY)\n$ ").strip()
+    mot = input("Enter a word, a sentence or a command.\nCommand list in README.md!\n$ ").strip()
     
     # Verification if the special command is used
     numero_ligne = analyser_commande(mot)
