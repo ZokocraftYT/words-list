@@ -22,6 +22,12 @@ Currently, the repository includes word lists for:
 ✅ German  
 ✅ *(More languages to come!)*  
 
+## Commands:
+#### /do stop
+The /do stop command just stop the program. Simple.
+#### /do search !line_nb:true && !word:false
+This command make that the script don't search a word and says the line, no. He asks the line and says the word! (BUGGY, REALLY BUGGY)
+
 ## 📌 Notes  
 
 - This project is **open-source**, and contributions are welcome!  
